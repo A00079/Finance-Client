@@ -89,6 +89,58 @@ export default {
         },
         {
           // display menu item (or override title slot)
+          title: "loans",
+          // now this is not a link, but a menu item where there is a dropdown
+          dropdown: "loans",
+          content: "this is loans section",
+
+          // don't want a button element?
+          // element: "span",
+          // menu item can accept all attributes
+          attributes: {
+            // I want more classes! No problem
+            // string, array, object, not matter
+            // Custom attributes
+            "data-big": "yes",
+          },
+          // add some events?
+          listeners: {
+            // all possible native events
+            mouseover: (evt) => {
+              console.log("news hover", evt);
+            },
+          },
+          // just extra properties in the object
+          new_section: false,
+        },
+        {
+          // display menu item (or override title slot)
+          title: "loans",
+          // now this is not a link, but a menu item where there is a dropdown
+          dropdown: "loans",
+          content: "this is loans section",
+
+          // don't want a button element?
+          // element: "span",
+          // menu item can accept all attributes
+          attributes: {
+            // I want more classes! No problem
+            // string, array, object, not matter
+            // Custom attributes
+            "data-big": "yes",
+          },
+          // add some events?
+          listeners: {
+            // all possible native events
+            mouseover: (evt) => {
+              console.log("news hover", evt);
+            },
+          },
+          // just extra properties in the object
+          new_section: false,
+        },
+        {
+          // display menu item (or override title slot)
           title: "cards",
           // now this is not a link, but a menu item where there is a dropdown
           dropdown: "cards",
@@ -134,10 +186,9 @@ export default {
 
 // Limit the width to 1024px and center
 .vsm-menu {
-  margin: 10px;
-  background-color: rgb(61, 194, 68);
+  background-color: #f1f1f1;
   ul {
-    max-width: 1024px;
+    max-width: 60%;
     margin: 0 auto;
   }
 }
@@ -154,7 +205,7 @@ export default {
   flex: 1 1 auto;
   img {
     user-select: none;
-    max-width: 40px;
+    max-width: 70px;
   }
 }
 
@@ -170,7 +221,7 @@ export default {
 
 // Styles for Dropdown Content:
 .wrap-content {
-  padding: 30px;
+  padding: 20px;
   // Set the width manually so that it does not depend
   // on changing content
   width: 300px;
